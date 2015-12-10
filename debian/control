@@ -1,4 +1,4 @@
-Source: cherrypy3
+Source: xivo-python-cherrypy3-packaging
 Section: python
 Priority: optional
 Maintainer: XiVO Dev Team <dev@avencall.com>
