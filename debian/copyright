@@ -1,0 +1,27 @@
+This package was debianized by Gustavo Noronha Silva <kov@debian.org> on
+Thu, 10 Mar 2005 09:32:58 -0300.
+
+It was downloaded from http://www.cherrypy.org/
+
+Copyright:
+
+Copyright (c) 2004-2009, CherryPy Team (team@cherrypy.org)
+
+cherrypy/lib/httpauth.py:
+Copyright (c) 2005, Tiago Cogumbreiro <cogumbreiro@users.sf.net>
+
+
+Upstream Authors:   Remi Delon
+	 	    Carlos Ribeiro
+		    Remco Boerma
+		    Jesir Vargas
+		    Pawel Maczewski
+		    Peter Hunt
+		    Jaroslaw Zabiello
+		    Robert Szefler
+		    and others
+
+License:
+
+This package is licensed under the BSD license which can be found,
+on Debian systems, at /usr/share/common-licenses/BSD.

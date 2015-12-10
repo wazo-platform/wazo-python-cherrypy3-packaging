@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
+%:
+	dh $@ --with python2
+
+override_dh_clean:
+	-rm -rf api
+	-rm -rf CherryPy.egg-info/
+	dh_clean
+
+override_dh_auto_build:
+	./fetch_tarball.sh
+
+#Testsuite hangs and wasn't run before
+override_dh_auto_test:
+
+override_dh_install:
+	find debian/python*-cherrypy3/ -name LICENSE.txt -exec rm {} \;
+	dh_install
+	# Make python 2&3 cherrypy3 co-installable
+	mv debian/python-cherrypy3/usr/bin/cherryd debian/python-cherrypy3/usr/sbin
+
+override_dh_compress:
+	dh_compress -X.py -X.pdf
