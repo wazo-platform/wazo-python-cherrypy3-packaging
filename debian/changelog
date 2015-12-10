@@ -1,4 +1,4 @@
-cherrypy3 (3.7.0~xivo1) xivo-dev; urgency=medium
+xivo-python-cherrypy3-packaging (3.7.0~xivo2) xivo-dev; urgency=medium
 
   * Package 3.7.0
 
