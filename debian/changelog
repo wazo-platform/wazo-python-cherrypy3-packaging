@@ -1,3 +1,9 @@
+xivo-python-cherrypy3-packaging (3.7.0~xivo3) xivo-dev; urgency=medium
+
+  * Force rebuild
+
+ -- Francois Blackburn <fblackburn@avencall.com>  Wed, 16 Dec 2015 10:37:56 -0500
+
 xivo-python-cherrypy3-packaging (3.7.0~xivo2) xivo-dev; urgency=medium
 
   * Package 3.7.0
