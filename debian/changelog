@@ -1,3 +1,9 @@
+xivo-python-cherrypy3-packaging (3.7.0~xivo4) wazo-dev; urgency=medium
+
+  * update version
+
+ -- Etienne Lessard <elessard97@gmail.com>  Tue, 29 Nov 2016 14:32:03 -0500
+
 xivo-python-cherrypy3-packaging (3.7.0~xivo3) xivo-dev; urgency=medium
 
   * Force rebuild
