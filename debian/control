@@ -1,12 +1,17 @@
 Source: xivo-python-cherrypy3-packaging
 Section: python
 Priority: optional
-Maintainer: XiVO Dev Team <dev@avencall.com>
-Uploaders: XiVO Builder Team <dev@avencall.com>
-Build-Depends: debhelper (>= 9), python-setuptools (>= 0.6a9), python-all (>= 2.6.6-3~), dh-python
+Maintainer: Wazo Maintainers <dev@wazo.community>
+Build-Depends: debhelper (>= 9),
+               python-setuptools (>= 0.6a9),
+               python-all (>= 2.6.6-3~),
+               python3-all,
+               python3-setuptools,
+               dh-python
 Standards-Version: 3.9.5
 Homepage: http://www.cherrypy.org/
 X-Python-Version: >= 2.3
+X-Python3-Version: >= 3.4
 
 Package: python-cherrypy3
 Architecture: all
@@ -14,6 +19,29 @@ Depends: ${python:Depends}, ${misc:Depends}, python-routes
 Provides: ${python:Provides}
 Conflicts: python-cherrypy
 Description: Python web development framework - version 3
+ CherryPy is a pythonic, object-oriented web development framework. It
+ provides the foundation over which complex web-based applications can
+ be written, with little or no knowledge of the underlying
+ protocols. CherryPy allows developers to build web applications in
+ much the same way they would build any other object-oriented Python
+ program. This usually results in smaller source code developed in
+ less time.
+ .
+ CherryPy is up-to-date with the latest developments on using Python
+ for web development: it features a bundled WSGI server, and is able
+ to integrate with other dispatching mechanisms, such as
+ Routes. CherryPy can be run as a standalone application, since it
+ provides its own HTTP server; setting it up behind another HTTP
+ server, such as Apache, or even with mod_python are also options.
+ .
+ This version is backwards incompatible with the 2.2 version in some
+ ways. See http://www.cherrypy.org/wiki/UpgradeTo30.
+
+
+Package: python3-cherrypy3
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-routes
+Description: Python 3 web development framework - version 3
  CherryPy is a pythonic, object-oriented web development framework. It
  provides the foundation over which complex web-based applications can
  be written, with little or no knowledge of the underlying

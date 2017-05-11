@@ -1,17 +1,25 @@
 #!/usr/bin/make -f
 
-include /usr/share/dpkg/default.mk
+PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
+VERSION ?= $(shell cat VERSION)
+CHERRYPY_URL_DOWNLOAD = "https://github.com/cherrypy/cherrypy/archive/${VERSION}.tar.gz"
+
+export PYBUILD_NAME=cherrypy3
+export PYBUILD_DISABLE=test
+export PYBUILD_SYSTEM=distutils
 
 %:
-	dh $@ --with python2
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_auto_clean:
+	if [ -f setup.py ]; then dh_auto_clean; fi
+
 
 override_dh_clean:
 	-rm -rf api
 	-rm -rf CherryPy.egg-info/
+	-rm -f debian/cherryd.1
 	dh_clean
-
-override_dh_auto_build:
-	./fetch_tarball.sh
 
 #Testsuite hangs and wasn't run before
 override_dh_auto_test:
@@ -21,6 +29,16 @@ override_dh_install:
 	dh_install
 	# Make python 2&3 cherrypy3 co-installable
 	mv debian/python-cherrypy3/usr/bin/cherryd debian/python-cherrypy3/usr/sbin
+	mkdir -p debian/python3-cherrypy3/usr/sbin/
+	mv debian/python3-cherrypy3/usr/bin/cherryd debian/python3-cherrypy3/usr/sbin/cherryd3
 
 override_dh_compress:
 	dh_compress -X.py -X.pdf
+
+
+.PHONY: get-orig-source
+
+get-orig-source:
+	@echo "# Downloading..."
+	wget -nv -T10 -t3 $(CHERRYPY_URL_DOWNLOAD) -O ../$(PKG)_$(VERSION).orig.tar.gz
+
