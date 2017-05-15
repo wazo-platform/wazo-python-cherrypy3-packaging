@@ -15,7 +15,7 @@ To build on a test environment before submitting a change to production the foll
 
 ```sh
 make -f debian/rules get-orig-source
-tar -xvf ../xivo-python-cherrypy-packaging_*.orig.tar.gz  --strip 1
+tar -xvf ../xivo-python-cherrypy3-packaging_*.orig.tar.gz  --strip 1
 dpkg-buildpackage -us -uc
 ```
 The `.deb` will be located in the parent directory.
