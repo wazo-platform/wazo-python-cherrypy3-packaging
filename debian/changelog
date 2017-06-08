@@ -1,3 +1,9 @@
+xivo-python-cherrypy3-packaging (10.2.2-1~wazo6) wazo-dev; urgency=medium
+
+  * Upgrade to 10.2.2
+
+ -- Wazo Maintainers <dev@wazo.community>  Wed, 07 Jun 2017 11:36:38 -0400
+
 xivo-python-cherrypy3-packaging (3.7.0-1~xivo5) wazo-dev; urgency=medium
 
   * add python3 packaging

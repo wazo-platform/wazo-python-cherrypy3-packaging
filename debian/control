@@ -15,7 +15,11 @@ X-Python3-Version: >= 3.4
 
 Package: python-cherrypy3
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}, python-routes
+Depends: ${python:Depends},
+         ${misc:Depends},
+         python-cheroot,
+         python-portend,
+         python-six
 Provides: ${python:Provides}
 Conflicts: python-cherrypy
 Description: Python web development framework - version 3
@@ -40,7 +44,11 @@ Description: Python web development framework - version 3
 
 Package: python3-cherrypy3
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}, python3-routes
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         python3-cheroot,
+         python3-portend,
+         python3-six
 Description: Python 3 web development framework - version 3
  CherryPy is a pythonic, object-oriented web development framework. It
  provides the foundation over which complex web-based applications can
