@@ -1,0 +1,21 @@
+Description: remove setuptools_scm dependency
+
+--- xivo-python-cherrypy3-packaging-10.2.2.orig/setup.py
++++ xivo-python-cherrypy3-packaging-10.2.2/setup.py
+@@ -107,7 +107,7 @@ extras_require = {
+
+ setup_params = dict(
+     name=name,
+-    use_scm_version=True,
++    version="10.2.2",
+     description=desc,
+     long_description=long_desc,
+     classifiers=classifiers,
+@@ -121,7 +121,6 @@ setup_params = dict(
+     install_requires=install_requires,
+     extras_require=extras_require,
+     setup_requires=[
+-        'setuptools_scm',
+     ] + pytest_runner,
+     python_requires='>=2.6,!=3.0.*',
+ )
