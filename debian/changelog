@@ -1,3 +1,9 @@
+xivo-python-cherrypy3-packaging (10.2.2-1~wazo7) wazo-dev; urgency=medium
+
+  * update for stretch
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 09 Jan 2018 14:43:42 -0500
+
 xivo-python-cherrypy3-packaging (10.2.2-1~wazo6) wazo-dev; urgency=medium
 
   * Upgrade to 10.2.2
