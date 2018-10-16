@@ -1,3 +1,9 @@
+wazo-python-cherrypy3-packaging (17.4.0-1~wazo1) wazo-dev-stretch; urgency=medium
+
+  * upgrade version 17.4.0
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 16 Oct 2018 14:58:01 -0400
+
 wazo-python-cherrypy3-packaging (10.2.2-1~wazo8) wazo-dev-stretch; urgency=medium
 
   * rename source packaging

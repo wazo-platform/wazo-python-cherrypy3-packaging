@@ -1,21 +1,23 @@
 Description: remove setuptools_scm dependency
 
---- wazo-python-cherrypy3-packaging-10.2.2.orig/setup.py
-+++ wazo-python-cherrypy3-packaging-10.2.2/setup.py
-@@ -107,7 +107,7 @@ extras_require = {
-
- setup_params = dict(
+Index: wazo-python-cherrypy3-packaging/setup.py
+===================================================================
+--- wazo-python-cherrypy3-packaging.orig/setup.py
++++ wazo-python-cherrypy3-packaging/setup.py
+@@ -11,7 +11,7 @@ repo_url = 'https://github.com/{}'.forma
+ 
+ params = dict(
      name=name,
 -    use_scm_version=True,
-+    version="10.2.2",
-     description=desc,
-     long_description=long_desc,
-     classifiers=classifiers,
-@@ -121,7 +121,6 @@ setup_params = dict(
-     install_requires=install_requires,
-     extras_require=extras_require,
++    version='17.4.0',
+     description='Object-Oriented HTTP framework',
+     author='CherryPy Team',
+     author_email='team@cherrypy.org',
+@@ -103,7 +103,6 @@ params = dict(
+             ['pypiwin32==219'],
+     },
      setup_requires=[
 -        'setuptools_scm',
-     ] + pytest_runner,
-     python_requires='>=2.6,!=3.0.*',
+     ],
+     python_requires='>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
  )

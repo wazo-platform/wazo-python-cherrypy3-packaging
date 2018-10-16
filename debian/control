@@ -10,16 +10,19 @@ Build-Depends: debhelper (>= 9),
                dh-python
 Standards-Version: 3.9.5
 Homepage: http://www.cherrypy.org/
-X-Python-Version: >= 2.3
+X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.5
 
 Package: python-cherrypy3
 Architecture: all
 Depends: ${python:Depends},
          ${misc:Depends},
-         python-cheroot,
-         python-portend,
-         python-six
+         python-cheroot (>= 6.2.4),
+         python-contextlib2,
+         python-more-itertools,
+         python-portend (>= 2.1.1),
+         python-six,
+         python-zc.lockfile
 Provides: ${python:Provides}
 Conflicts: python-cherrypy
 Description: Python web development framework - version 3
@@ -46,9 +49,12 @@ Package: python3-cherrypy3
 Architecture: all
 Depends: ${python3:Depends},
          ${misc:Depends},
-         python3-cheroot,
-         python3-portend,
-         python3-six
+         python3-cheroot (>= 6.2.4),
+         python3-contextlib2,
+         python3-more-itertools,
+         python3-portend (>= 2.1.1),
+         python3-six,
+         python3-zc.lockfile
 Description: Python 3 web development framework - version 3
  CherryPy is a pythonic, object-oriented web development framework. It
  provides the foundation over which complex web-based applications can
