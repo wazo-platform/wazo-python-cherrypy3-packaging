@@ -1,7 +1,7 @@
 Description: remove setuptools_scm dependency
 
---- xivo-python-cherrypy3-packaging-10.2.2.orig/setup.py
-+++ xivo-python-cherrypy3-packaging-10.2.2/setup.py
+--- wazo-python-cherrypy3-packaging-10.2.2.orig/setup.py
++++ wazo-python-cherrypy3-packaging-10.2.2/setup.py
 @@ -107,7 +107,7 @@ extras_require = {
 
  setup_params = dict(

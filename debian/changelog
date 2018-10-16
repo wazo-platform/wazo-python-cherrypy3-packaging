@@ -1,3 +1,9 @@
+wazo-python-cherrypy3-packaging (10.2.2-1~wazo8) wazo-dev-stretch; urgency=medium
+
+  * rename source packaging
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 16 Oct 2018 13:08:46 -0400
+
 xivo-python-cherrypy3-packaging (10.2.2-1~wazo7) wazo-dev; urgency=medium
 
   * update for stretch

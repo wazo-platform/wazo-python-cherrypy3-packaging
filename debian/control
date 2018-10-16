@@ -1,4 +1,4 @@
-Source: xivo-python-cherrypy3-packaging
+Source: wazo-python-cherrypy3-packaging
 Section: python
 Priority: optional
 Maintainer: Wazo Maintainers <dev@wazo.community>
