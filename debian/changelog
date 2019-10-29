@@ -1,3 +1,9 @@
+wazo-python-cherrypy3-packaging (17.4.0-1~wazo2) wazo-dev-buster; urgency=medium
+
+  * rebuild buster
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 29 Oct 2019 09:05:36 -0400
+
 wazo-python-cherrypy3-packaging (17.4.0-1~wazo1) wazo-dev-stretch; urgency=medium
 
   * upgrade version 17.4.0
