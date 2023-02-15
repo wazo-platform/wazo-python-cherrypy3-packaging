@@ -11,10 +11,6 @@ export PYBUILD_SYSTEM=distutils
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
-override_dh_auto_clean:
-	if [ -f setup.py ]; then dh_auto_clean; fi
-
-
 override_dh_clean:
 	-rm -rf api
 	-rm -rf CherryPy.egg-info/

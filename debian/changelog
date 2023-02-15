@@ -1,3 +1,9 @@
+wazo-python-cherrypy3-packaging (17.4.0-1~wazo4) wazo-dev-buster; urgency=medium
+
+  * Use debhelper 12
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 15 Feb 2023 11:29:40 -0500
+
 wazo-python-cherrypy3-packaging (17.4.0-1~wazo3) wazo-dev-buster; urgency=medium
 
   * remove python2 package
