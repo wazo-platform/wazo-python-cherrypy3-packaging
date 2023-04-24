@@ -1,3 +1,9 @@
+wazo-python-cherrypy3-packaging (17.4.0-1~wazo6) wazo-dev-bullseye; urgency=medium
+
+  * update zuul config
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Mon, 24 Apr 2023 09:26:48 -0400
+
 wazo-python-cherrypy3-packaging (17.4.0-1~wazo5) wazo-dev-bullseye; urgency=medium
 
   * rebuild for Bullseye
