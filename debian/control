@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 12),
                dh-python
 Standards-Version: 3.9.5
 Homepage: http://www.cherrypy.org/
-X-Python3-Version: >= 3.7
+X-Python3-Version: >= 3.9
 
 Package: python3-cherrypy3
 Architecture: all
